@@ -1,0 +1,25 @@
+[theme]
+base = "dark"
+primaryColor = "#22d3ee"
+backgroundColor = "#050b18"
+secondaryBackgroundColor = "#0b1426"
+textColor = "#e2e8f0"
+font = "sans serif"
+
+[server]
+# Keep in sync with MAX_UPLOAD_MB in .env (the app re-checks size itself).
+maxUploadSize = 10
+enableXsrfProtection = true
+enableCORS = true
+headless = true
+
+[client]
+toolbarMode = "minimal"
+# Do not leak stack traces to end users. Use "full" only while developing.
+showErrorDetails = "none"
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+fastReruns = true
